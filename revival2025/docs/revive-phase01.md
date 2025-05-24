@@ -31,3 +31,36 @@ This document records the findings, experiments, and progress for Phase 01 of th
 ### Next Steps for Investigation
 *   Attempt to locate the specific `pom.xml` content for `org.jboss:jboss-parent:36` to confirm its default settings (especially Java version).
 *   Proceed to setting up the build environment based on these findings.
+
+---
+
+## Phase 1: Environment Setup and Build (Current Step)
+
+### Environment Configuration
+
+The following development environment has been configured:
+
+*   **Java Development Kit (JDK):**
+    *   Version: OpenJDK 1.8.0_452
+    *   Verification:
+        ```
+        openjdk version "1.8.0_452"
+        OpenJDK Runtime Environment (build 1.8.0_452-8u452-ga~us1-0ubuntu1~24.04-b09)
+        OpenJDK 64-Bit Server VM (build 25.452-b09, mixed mode)
+        ```
+        ```
+        javac 1.8.0_452
+        ```
+
+*   **Apache Maven:**
+    *   Version: 3.8.7
+    *   Verification:
+        ```
+        Apache Maven 3.8.7
+        Maven home: /usr/share/maven
+        Java version: 1.8.0_452, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
+        Default locale: en, platform encoding: UTF-8
+        OS name: "linux", version: "6.8.0", arch: "amd64", family: "unix"
+        ```
+
+This setup aligns with the initial investigation, targeting Java 8 and a modern Maven 3.x version.
